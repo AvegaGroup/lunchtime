@@ -23,4 +23,13 @@ module.exports = function(LunchVote, app, auth, database) {
       res.send(html);
     });
   });
+
+
+  app.get('/lunchVote/list', function(req, res, next) {
+    var list = ['a', 'b', 'c'];
+    console.log('/lunchVote/list', list);
+    res.send(list);
+  });
+
+
 };
