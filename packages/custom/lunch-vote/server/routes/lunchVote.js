@@ -1,5 +1,7 @@
 'use strict';
 
+var lunchVote = require('../controllers/lunchVote');
+
 // The Package is past automatically as first parameter
 module.exports = function(LunchVote, app, auth, database) {
 
@@ -25,11 +27,14 @@ module.exports = function(LunchVote, app, auth, database) {
   });
 
 
+  app.route('/lunchVote/list').get(lunchVote.getList);
+
+/*
   app.get('/lunchVote/list', function(req, res, next) {
-    var list = ['a', 'b', 'c'];
-    console.log('/lunchVote/list', list);
+    var list = ['apa'];
     res.send(list);
   });
 
+*/
 
 };
