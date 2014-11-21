@@ -6,5 +6,6 @@ angular.module('mean.lunch-vote').controller('LunchVoteController', ['$scope', '
     $scope.package = {
       name: 'lunch-vote'
     };
+    $scope.restaurants = LunchVote.query();
   }
 ]);
