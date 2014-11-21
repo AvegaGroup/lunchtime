@@ -29,12 +29,4 @@ module.exports = function(LunchVote, app, auth, database) {
 
   app.route('/lunchVote/list').get(lunchVote.getList);
 
-/*
-  app.get('/lunchVote/list', function(req, res, next) {
-    var list = ['apa'];
-    res.send(list);
-  });
-
-*/
-
 };
