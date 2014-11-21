@@ -23,10 +23,13 @@ module.exports = function(LunchVote, app, auth, database) {
       res.send(html);
     });
   });
+<<<<<<< HEAD
 
   app.get('/lunchVote/list', function(req, res, next) {
     var list = ['a', 'b', 'c'];
     console.log(list);
     res.send(list);
   });
+=======
+>>>>>>> origin/master
 };
